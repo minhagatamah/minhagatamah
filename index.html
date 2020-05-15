@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>Gata</title>
+</head>
+<body>
+    <div class="buttons">
+        <button id="myBtn">Clica gata</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content text_white">
+            <span id="span" class="close">&times;</span>
+            <br>
+            <br>
+
+            <h4 style="opacity: 0.75; text-align:center;">Minha gata pensei em te perguntar o quanto é linda, 
+                mas gostaria eu, que fosse algo inusitado
+            </h4>
+            <br>
+            <h2 style="text-align: center;"> <strong>"</strong> Isso é só para você saber que é 
+                extremamente <strong>LINDA "</strong> 
+            </h2>
+            <div style="text-align: center;">
+                <img src="./static/img/pulse.svg" width="92px" alt="">
+            </div>
+            <audio id="player">
+                <source src="./static/music/ferrugem.mp3" type="audio/mpeg">
+              </audio>
+            <style>
+                .row{
+                    text-align: center;
+                }
+                .row i {
+                    margin:0 9% 0 0;
+                    font-size: larger;
+                }
+            </style>
+            <div class="row" style="padding: 15px;">
+                <i onclick="document.getElementById('player').play()" class="fa fa-play"></i>
+                <i onclick="document.getElementById('player').pause()" class="fa fa-pause"></i>
+                <i onclick="document.getElementById('player').volume+=0.1" class="fa fa-volume-up"></i>
+                <i onclick="document.getElementById('player').volume-=0.1" class="fa fa-volume-down"></i>
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="footer text_white">
+        <p style="opacity: 0.33; text-align: center;">
+        Copyright &copy; Denny Erikson 2020</p>
+    </div>
+</body>
+<script src="./static/js/index.js"></script>
+</html>
